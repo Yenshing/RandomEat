@@ -19,6 +19,15 @@
 		A69FB5C31DA4FF0C00B0076E /* Restaurant+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A69FB5C01DA4FF0C00B0076E /* Restaurant+CoreDataClass.m */; };
 		A69FB5C41DA4FF0C00B0076E /* Restaurant+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A69FB5C21DA4FF0C00B0076E /* Restaurant+CoreDataProperties.m */; };
 		A69FB5C71DA4FF8E00B0076E /* RestaurantVO.m in Sources */ = {isa = PBXBuildFile; fileRef = A69FB5C61DA4FF8E00B0076E /* RestaurantVO.m */; };
+		A69FB5CC1DA5EA4800B0076E /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A69FB5CB1DA5EA4800B0076E /* HMSegmentedControl.m */; };
+		A69FB5CF1DA5F4F300B0076E /* ListAllRestaurantVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A69FB5CE1DA5F4F300B0076E /* ListAllRestaurantVC.m */; };
+		A69FB5D21DA622E000B0076E /* RestaurantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A69FB5D11DA622E000B0076E /* RestaurantTableViewCell.m */; };
+		A69FB5D61DA6243E00B0076E /* star_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = A69FB5D41DA6243E00B0076E /* star_gray.png */; };
+		A69FB5D71DA6243E00B0076E /* star_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = A69FB5D51DA6243E00B0076E /* star_yellow.png */; };
+		A69FB5DF1DA63FA600B0076E /* RTCategory+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A69FB5DB1DA63FA600B0076E /* RTCategory+CoreDataClass.m */; };
+		A69FB5E01DA63FA600B0076E /* RTCategory+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A69FB5DD1DA63FA600B0076E /* RTCategory+CoreDataProperties.m */; };
+		A69FB5E31DA6414F00B0076E /* RTCategoryVO.m in Sources */ = {isa = PBXBuildFile; fileRef = A69FB5E21DA6414F00B0076E /* RTCategoryVO.m */; };
+		A69FB5E61DA64A0400B0076E /* ListAllCategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A69FB5E51DA64A0400B0076E /* ListAllCategoryVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +71,22 @@
 		A69FB5C21DA4FF0C00B0076E /* Restaurant+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Restaurant+CoreDataProperties.m"; sourceTree = "<group>"; };
 		A69FB5C51DA4FF8E00B0076E /* RestaurantVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantVO.h; sourceTree = "<group>"; };
 		A69FB5C61DA4FF8E00B0076E /* RestaurantVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantVO.m; sourceTree = "<group>"; };
+		A69FB5CA1DA5EA4800B0076E /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		A69FB5CB1DA5EA4800B0076E /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		A69FB5CD1DA5F4F300B0076E /* ListAllRestaurantVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAllRestaurantVC.h; sourceTree = "<group>"; };
+		A69FB5CE1DA5F4F300B0076E /* ListAllRestaurantVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAllRestaurantVC.m; sourceTree = "<group>"; };
+		A69FB5D01DA622E000B0076E /* RestaurantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantTableViewCell.h; sourceTree = "<group>"; };
+		A69FB5D11DA622E000B0076E /* RestaurantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantTableViewCell.m; sourceTree = "<group>"; };
+		A69FB5D41DA6243E00B0076E /* star_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_gray.png; sourceTree = "<group>"; };
+		A69FB5D51DA6243E00B0076E /* star_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_yellow.png; sourceTree = "<group>"; };
+		A69FB5DA1DA63FA600B0076E /* RTCategory+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCategory+CoreDataClass.h"; sourceTree = "<group>"; };
+		A69FB5DB1DA63FA600B0076E /* RTCategory+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCategory+CoreDataClass.m"; sourceTree = "<group>"; };
+		A69FB5DC1DA63FA600B0076E /* RTCategory+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCategory+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A69FB5DD1DA63FA600B0076E /* RTCategory+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCategory+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A69FB5E11DA6414F00B0076E /* RTCategoryVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCategoryVO.h; sourceTree = "<group>"; };
+		A69FB5E21DA6414F00B0076E /* RTCategoryVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCategoryVO.m; sourceTree = "<group>"; };
+		A69FB5E41DA64A0400B0076E /* ListAllCategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListAllCategoryVC.h; sourceTree = "<group>"; };
+		A69FB5E51DA64A0400B0076E /* ListAllCategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListAllCategoryVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +137,18 @@
 		A69FB5751DA4FC6800B0076E /* eating */ = {
 			isa = PBXGroup;
 			children = (
+				A69FB5D31DA6243E00B0076E /* Image */,
+				A69FB5C81DA5EA4800B0076E /* Lib */,
 				A69FB5791DA4FC6800B0076E /* AppDelegate.h */,
 				A69FB57A1DA4FC6800B0076E /* AppDelegate.m */,
 				A69FB57C1DA4FC6800B0076E /* ViewController.h */,
 				A69FB57D1DA4FC6800B0076E /* ViewController.m */,
+				A69FB5E41DA64A0400B0076E /* ListAllCategoryVC.h */,
+				A69FB5E51DA64A0400B0076E /* ListAllCategoryVC.m */,
+				A69FB5CD1DA5F4F300B0076E /* ListAllRestaurantVC.h */,
+				A69FB5CE1DA5F4F300B0076E /* ListAllRestaurantVC.m */,
+				A69FB5D01DA622E000B0076E /* RestaurantTableViewCell.h */,
+				A69FB5D11DA622E000B0076E /* RestaurantTableViewCell.m */,
 				A69FB57F1DA4FC6800B0076E /* Main.storyboard */,
 				A69FB5851DA4FC6800B0076E /* Assets.xcassets */,
 				A69FB5871DA4FC6800B0076E /* LaunchScreen.storyboard */,
@@ -159,11 +192,43 @@
 				A69FB5C01DA4FF0C00B0076E /* Restaurant+CoreDataClass.m */,
 				A69FB5C11DA4FF0C00B0076E /* Restaurant+CoreDataProperties.h */,
 				A69FB5C21DA4FF0C00B0076E /* Restaurant+CoreDataProperties.m */,
+				A69FB5DA1DA63FA600B0076E /* RTCategory+CoreDataClass.h */,
+				A69FB5DB1DA63FA600B0076E /* RTCategory+CoreDataClass.m */,
+				A69FB5DC1DA63FA600B0076E /* RTCategory+CoreDataProperties.h */,
+				A69FB5DD1DA63FA600B0076E /* RTCategory+CoreDataProperties.m */,
 				A69FB5C51DA4FF8E00B0076E /* RestaurantVO.h */,
 				A69FB5C61DA4FF8E00B0076E /* RestaurantVO.m */,
+				A69FB5E11DA6414F00B0076E /* RTCategoryVO.h */,
+				A69FB5E21DA6414F00B0076E /* RTCategoryVO.m */,
 				A69FB5821DA4FC6800B0076E /* eating.xcdatamodeld */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		A69FB5C81DA5EA4800B0076E /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A69FB5C91DA5EA4800B0076E /* HMSegmentedControl */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		A69FB5C91DA5EA4800B0076E /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				A69FB5CA1DA5EA4800B0076E /* HMSegmentedControl.h */,
+				A69FB5CB1DA5EA4800B0076E /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		A69FB5D31DA6243E00B0076E /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				A69FB5D41DA6243E00B0076E /* star_gray.png */,
+				A69FB5D51DA6243E00B0076E /* star_yellow.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +338,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69FB5D61DA6243E00B0076E /* star_gray.png in Resources */,
+				A69FB5D71DA6243E00B0076E /* star_yellow.png in Resources */,
 				A69FB5891DA4FC6800B0076E /* LaunchScreen.storyboard in Resources */,
 				A69FB5861DA4FC6800B0076E /* Assets.xcassets in Resources */,
 				A69FB5811DA4FC6800B0076E /* Main.storyboard in Resources */,
@@ -301,11 +368,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A69FB5C71DA4FF8E00B0076E /* RestaurantVO.m in Sources */,
+				A69FB5CC1DA5EA4800B0076E /* HMSegmentedControl.m in Sources */,
+				A69FB5E31DA6414F00B0076E /* RTCategoryVO.m in Sources */,
 				A69FB5C31DA4FF0C00B0076E /* Restaurant+CoreDataClass.m in Sources */,
 				A69FB57E1DA4FC6800B0076E /* ViewController.m in Sources */,
 				A69FB57B1DA4FC6800B0076E /* AppDelegate.m in Sources */,
 				A69FB5781DA4FC6800B0076E /* main.m in Sources */,
+				A69FB5CF1DA5F4F300B0076E /* ListAllRestaurantVC.m in Sources */,
 				A69FB5C41DA4FF0C00B0076E /* Restaurant+CoreDataProperties.m in Sources */,
+				A69FB5E01DA63FA600B0076E /* RTCategory+CoreDataProperties.m in Sources */,
+				A69FB5E61DA64A0400B0076E /* ListAllCategoryVC.m in Sources */,
+				A69FB5DF1DA63FA600B0076E /* RTCategory+CoreDataClass.m in Sources */,
+				A69FB5D21DA622E000B0076E /* RestaurantTableViewCell.m in Sources */,
 				A69FB5841DA4FC6800B0076E /* eating.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +529,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5P4Y7L4FBG;
 				INFOPLIST_FILE = eating/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joiiup.eating.eating;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -467,6 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5P4Y7L4FBG;
 				INFOPLIST_FILE = eating/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joiiup.eating.eating;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,6 +614,7 @@
 				A69FB5A51DA4FC6800B0076E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A69FB5A61DA4FC6800B0076E /* Build configuration list for PBXNativeTarget "eatingTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +623,7 @@
 				A69FB5A81DA4FC6800B0076E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A69FB5A91DA4FC6800B0076E /* Build configuration list for PBXNativeTarget "eatingUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +632,7 @@
 				A69FB5AB1DA4FC6800B0076E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

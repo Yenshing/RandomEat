@@ -5,8 +5,15 @@
         <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="whichCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RTCategory" inverseName="restaurants" inverseEntity="RTCategory" syncable="YES"/>
+    </entity>
+    <entity name="RTCategory" representedClassName="RTCategory" syncable="YES">
+        <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="restaurants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Restaurant" inverseName="whichCategory" inverseEntity="Restaurant" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Restaurant" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Restaurant" positionX="-63" positionY="-18" width="128" height="118"/>
+        <element name="RTCategory" positionX="-254" positionY="-18" width="128" height="88"/>
     </elements>
 </model>

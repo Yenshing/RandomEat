@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "RestaurantVO.h"
+#import "RTCategory+CoreDataClass.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,10 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Insert code here to declare functionality of your managed object subclass
 + (void)addRestaurantObject:(RestaurantVO *)new_restaurant;
-+ (void)removeRestaurantObject:(NSString *)restaurant_name;
++ (BOOL)removeRestaurantObject:(NSString *)restaurant_name;
 + (NSArray *)readRestaurantsObject;
 + (BOOL)restaurantsObjectIsFavorite:(NSString *)restaurant_name isFavorite:(NSNumber *)isFavorite;
 + (NSArray *)getIsFavoriteData;
++ (NSArray *)getPriceRangeData:(NSInteger)priceRange;
 
 @end
 

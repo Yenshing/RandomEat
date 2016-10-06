@@ -2,7 +2,7 @@
 //  Restaurant+CoreDataProperties.m
 //  eating
 //
-//  Created by Yencheng on 2016/10/5.
+//  Created by Yencheng on 2016/10/6.
 //  Copyright © 2016年 joiiup. All rights reserved.
 //
 
@@ -14,9 +14,10 @@
 	return [[NSFetchRequest alloc] initWithEntityName:@"Restaurant"];
 }
 
-@dynamic name;
-@dynamic price;
 @dynamic category;
 @dynamic isFavorite;
+@dynamic name;
+@dynamic price;
+@dynamic whichCategory;
 
 @end

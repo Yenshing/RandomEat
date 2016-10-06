@@ -11,6 +11,7 @@
 
 @implementation Restaurant
 
+/*
 + (NSPersistentContainer *)getNSPersistentContainer {
     id delegate = [[UIApplication sharedApplication] delegate];
     //NSManagedObjectContext *context = [delegate managedObjectContext];
@@ -21,6 +22,11 @@
     id delegate = [[UIApplication sharedApplication] delegate];
     //NSManagedObjectContext *context = [delegate managedObjectContext];
     return [delegate persistentContainer].viewContext;
+}*/
+
++ (NSManagedObjectContext *)getNSManagedObjectContext {
+    id delegate = [[UIApplication sharedApplication] delegate];
+    return [delegate managedObjectContext];;
 }
 
 + (void)addRestaurantObject:(RestaurantVO *)new_restaurant {
@@ -54,7 +60,8 @@
         restaurant.price = new_restaurant.price.integerValue;
         restaurant.category = new_restaurant.category;
         restaurant.isFavorite = new_restaurant.isFavorite.boolValue;
-
+        restaurant.whichCategory = [RTCategory categoryWithName:new_restaurant.category inManagedObjectContext:context];
+        
         //save
         if(![context save:&err]) {
             NSLog(@"restaurant create error = %@", err);
@@ -64,7 +71,7 @@
     }
 }
 
-+ (void)removeRestaurantObject:(NSString *)restaurant_name {
++ (BOOL)removeRestaurantObject:(NSString *)restaurant_name {
     NSManagedObjectContext *context = [self getNSManagedObjectContext];
     
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Restaurant"];
@@ -76,19 +83,21 @@
     if(!matches || error || ([matches count] > 1)){
         //handle error
         NSLog(@"match error = %@", error);
-        return;
+        return false;
     } else if ([matches count]) {
         [context deleteObject:[matches firstObject]];
     } else {
         NSLog(@"match error = empty");
-        return;
+        return false;
     }
     
     if(![context save:&error]) {
         NSLog(@"delete error = %@", error);
     } else {
         NSLog(@"delete success");
+        return true;
     }
+    return false;
 }
 
 + (NSArray *)readRestaurantsObject {
@@ -164,6 +173,26 @@
     }
     return nil;
 
+}
+
++ (NSArray *)getPriceRangeData:(NSInteger)priceRange {
+    NSManagedObjectContext *context = [self getNSManagedObjectContext];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Restaurant"];
+    request.predicate = [NSPredicate predicateWithFormat:@"price <= %@",[NSNumber numberWithInteger:priceRange]];
+
+    NSError *error;
+    NSArray *matches = [context executeFetchRequest:request error:&error];
+    
+    if(!matches || error ){
+        //handle error
+        NSLog(@"match error = %@", error);
+    } else if ([matches count]) {
+        NSLog(@"match count= %lu", (unsigned long)[matches count]);
+        return matches;
+    } else {
+        NSLog(@"match error = empty");
+    }
+    return nil;
 }
 
 @end

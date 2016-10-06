@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum {
+    segmentView1 = 0,
+    segmentView2 = 1,
+    segmentView3 = 2
+} segmentViewID;
+
 @interface ViewController : UIViewController
 
+@property (nonatomic) segmentViewID viewIdSelect;
+@property (nonatomic) segmentViewID viewIdCurrent;
 
 @end
 

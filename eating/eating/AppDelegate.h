@@ -13,8 +13,16 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+//after iOS 10
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 
+//before iOS 10
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+- (NSURL *)applicationDocumentsDirectory;
+
+//general
 - (void)saveContext;
 + (AppDelegate*)appDelegate;
 
